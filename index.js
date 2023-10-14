@@ -31,7 +31,7 @@ const chooseRace = () => {
 
 // randomly choose from the available classes
 const chooseClass = () => {
-	availClasses[ Math.floor( Math.random() * availClasses.length )];
+	return availClasses[ Math.floor( Math.random() * availClasses.length )];
 };
 
 /**
@@ -110,4 +110,4 @@ const newCharacter = pickNewCombo();
 console.log(
 	`cleanup using ${ newCharacter.newRace } ${ newCharacter.newClass }`
 );
-cleanUp( newCharacter.newRace, newCharacter.newClass );
+// cleanUp( newCharacter.newRace, newCharacter.newClass );
